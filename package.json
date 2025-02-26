@@ -1,0 +1,31 @@
+{
+    "name": "vscode-rsf-extension",
+    "displayName": "RSF Reader",
+    "description": "A VSCode extension to open .rsf (Madagascar sesmic data files) dataheaders and display the output in a text box",
+    "version": "0.0.1",
+    "publisher": "JiaweiChen",
+    "engines": {
+      "vscode": "^1.50.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "activationEvents": [
+      "onFileSystem:rsf"
+    ],
+    "main": "./src/extension.js",
+    "contributes": {
+      "customEditors": [
+        {
+          "viewType": "rsfViewer.rsf",
+          "displayName": "RSF Viewer",
+          "selector": [
+            {
+              "filenamePattern": "*.rsf"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
