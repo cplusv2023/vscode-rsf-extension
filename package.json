@@ -26,6 +26,10 @@
           ]
         }
       ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/cplusv2023/vscode-rsf-extension.git"
     }
   }
   
